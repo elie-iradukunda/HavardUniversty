@@ -2,6 +2,9 @@ import React from 'react'
 import judith from '../assets/judith.jpeg'
 import quota from '../assets/quota.svg'
 import chan from '../assets/chan.jpeg'
+  import chag from '../assets/fag.jpeg'
+  import kim from '../assets/kim.jpeg'
+  import sufiya from '../assets/sufiy.jpeg'
 
 const Landing = () => {
   
@@ -85,7 +88,7 @@ const Landing = () => {
 
                 </div>
 
-                <div className='flex justify-center items-center'>
+                <div className='flex justify-center items-center gap-9'>
                     <div>
                         <span className='text-5xl font-semibold'>How mentorship has <br />
                         helped Harvard’s public <br />
@@ -93,12 +96,66 @@ const Landing = () => {
                         <p>Mentoring is a two-way journey of learning and growth where both <br />
                         the mentor and the mentee provide new perspectives.</p>
                     </div>
-                    <div>
+                    <div className='cursor-pointer'>
                         <img src={chan} alt="" className='w-[400px]' />
-                    <span>Meet the mentees</span>
+                    <span className='text-2xl'>Meet the mentees</span>
                         
                     </div>
                 </div>
+
+               <div className="bg-white text-black grid grid-cols-1 md:grid-cols-3 gap-8 p-6">
+  <div className="flex flex-col items-start space-y-4">
+    <img src={chag} alt="" className="w-full max-w-sm rounded-lg" />
+    <span className="text-xl font-semibold">Mentorship fuels Big ideas</span>
+    <p className="text-sm leading-relaxed">
+      As part of mentee - mentor pair Oolumide Fagboyegun was
+      awarded a fellowship to support his dissertation research,
+      which focused on the substances that surround and interact
+      with cells in the cortex of the brain.
+    </p>
+    <button className="flex items-center gap-2 bg-black text-white px-4 py-2 rounded-full hover:bg-slate-950 transition">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-white">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+      </svg>
+      <span className="text-sm">Learn more about his work</span>
+    </button>
+  </div>
+
+  <div className="flex flex-col items-start space-y-4">
+    <img src={sufiya} alt="" className="w-full max-w-sm rounded-lg" />
+    <span className="text-xl font-semibold">Mentorship fuels Big ideas</span>
+    <p className="text-sm leading-relaxed">
+      As part of mentee - mentor pair Oolumide Fagboyegun was
+      awarded a fellowship to support his dissertation research,
+      which focused on the substances that surround and interact
+      with cells in the cortex of the brain.
+    </p>
+    <button className="flex items-center gap-2 bg-black  text-white px-4 py-2 rounded-full hover:bg-slate-950 transition">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-white">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+      </svg>
+      <span className="text-sm">Learn more about his work</span>
+    </button>
+  </div>
+
+  <div className="flex flex-col items-start space-y-4">
+    <img src={kim} alt="" className="w-full max-w-sm rounded-lg" />
+    <span className="text-xl font-semibold">Mentorship fuels Big ideas</span>
+    <p className="text-sm leading-relaxed">
+      As part of mentee - mentor pair Oolumide Fagboyegun was
+      awarded a fellowship to support his dissertation research,
+      which focused on the substances that surround and interact
+      with cells in the cortex of the brain.
+    </p>
+    <button className="flex items-center gap-2 bg-black px-4 py-2  text-white rounded-full hover:bg-slate-950 transition">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-white">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+      </svg>
+      <span className="text-sm">Learn more about his work</span>
+    </button>
+  </div>
+</div>
+
               
             </div>
             
